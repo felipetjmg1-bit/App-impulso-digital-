@@ -1,0 +1,6 @@
+{
+  "name": "Impulso Digital - Soluções em I.A.",
+  "description": "Aplicativo corporativo oficial da Impulso Digital Soluções em I.A. (CNPJ: 57.291.550/0001-24), especialista em Inteligência Artificial Explicável (XAI) e Arquiteturas Avançadas de Dados.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
