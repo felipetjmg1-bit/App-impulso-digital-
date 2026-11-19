@@ -62,7 +62,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                     Sessão Ativa (OAuth2 / JWT)
                   </span>
                   <span className="bg-emerald-500/10 text-emerald-400 font-mono px-2 py-0.5 rounded border border-emerald-500/30">
-                    AES-256-GCM
+                    Autenticação simulada
                   </span>
                 </div>
               </div>
