@@ -59,7 +59,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                 <p className="text-xs text-slate-400">{user.email} • {user.company}</p>
                 <div className="flex items-center gap-2 mt-1 text-[11px]">
                   <span className="bg-cyan-500/10 text-cyan-300 font-mono px-2 py-0.5 rounded border border-cyan-500/30">
-                    Sessão de demonstração (sem OAuth/JWT real)
+                    Login simulado (sem provedor OAuth ou JWT real)
                   </span>
                   <span className="bg-emerald-500/10 text-emerald-400 font-mono px-2 py-0.5 rounded border border-emerald-500/30">
                     Autenticação simulada
@@ -72,9 +72,9 @@ export const AuthModal: React.FC<AuthModalProps> = ({
             <div className="bg-slate-950 border border-slate-800 rounded-2xl p-4 space-y-3 font-mono text-xs">
               <div className="flex items-center justify-between text-slate-400 border-b border-slate-800 pb-2">
                 <span className="flex items-center gap-1.5 text-cyan-400 font-bold">
-                  <Key className="w-4 h-4" /> Token JWT Criptografado
+                  <Key className="w-4 h-4" /> Payload de demonstração (não é JWT)
                 </span>
-                <span className="text-emerald-400 text-[10px]">Válido por 7h 59m</span>
+                <span className="text-emerald-400 text-[10px]">Valores ilustrativos, sem sessão real</span>
               </div>
 
               <div>
@@ -87,8 +87,8 @@ export const AuthModal: React.FC<AuthModalProps> = ({
     aud: "impulsodigital-xai-app",
     role: user.role,
     company: user.company,
-    cnpj_homologated: COMPANY_INFO.cnpj,
-    ceo_approval: "Felipe Aquino",
+    cnpj_demo: COMPANY_INFO.cnpj,
+    demo_only: true,
     exp: Math.floor(Date.now() / 1000) + 28800,
   },
   null,
