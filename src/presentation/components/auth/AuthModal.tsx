@@ -59,7 +59,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({
                 <p className="text-xs text-slate-400">{user.email} • {user.company}</p>
                 <div className="flex items-center gap-2 mt-1 text-[11px]">
                   <span className="bg-cyan-500/10 text-cyan-300 font-mono px-2 py-0.5 rounded border border-cyan-500/30">
-                    Sessão Ativa (OAuth2 / JWT)
+                    Sessão de demonstração (sem OAuth/JWT real)
                   </span>
                   <span className="bg-emerald-500/10 text-emerald-400 font-mono px-2 py-0.5 rounded border border-emerald-500/30">
                     Autenticação simulada
